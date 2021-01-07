@@ -1,0 +1,66 @@
+<div class="container-fluid ">
+        <div class="container">
+          <h3 class="text-center text-success">Create Student</h3>
+          <div class="row mt-5 ml-3 mr-3">
+            <div class="col-4">
+              <div class="form-group">
+                <label for="rollNo">Roll No*</label>
+                <input type="number"  [(ngModel)]="students.rollNo" name="rollNo" id="rollNo"
+                placeholder="roll number" class="form-control">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                 <label for="uName">User Name*</label>
+                <input type="text"  [(ngModel)]="students.userName" name="userName" id="userName" placeholder="User Name" class="form-control">
+              </div>
+            </div>
+               <!-- <div class="col-4">
+              <div class="form-group">
+                <label for="pwd">Password*</label>
+                <input type="password"  [(ngModel)]="students.password" name="password" id="password" placeholder="Password" class="form-control">
+              </div>
+            </div> -->
+            <div class="col-4">
+              <div class="form-group">
+                 <label for="std">Standard*</label>
+                <input type="text"  [(ngModel)]="students.standard" name="standard" id="standard" placeholder="Standard" class="form-control">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                 <label for="gender">Gender*</label>
+                <select class="form-control" [(ngModel)]="students.gender" name="gender" id="gender"  >
+                  <option value="">Choose</option>
+                   <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                 <label for="dob">Date Of Birth*</label>
+                <input type="date" [(ngModel)]="students.dateOfBirth" name="dateOfBirth" id="dateOfBirth"  placeholder="Date Of Birth" class="form-control">
+              </div>
+            </div>
+               <div class="col-4">
+              <div class="form-group">
+                <label for="faName">Father Name*</label>
+                <input type="text"  [(ngModel)]="students.fatherName" name="fatherName" id="fatherName" placeholder="Father Name" class="form-control">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                 <label for="pNo">Phone No*</label>
+                <input type="number"  [(ngModel)]="students.phoneNo" name="phoneNo" id="phoneNo" placeholder="Phone No" class="form-control">
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 text-center">
+            <a [routerLink]="['/studentlist']"><button type="button" (click)="submit()" class="btn-lg btn-primary">Submit</button></a>
+          </div>
+      
+        </div>
+     
+      </div>

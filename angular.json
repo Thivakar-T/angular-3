@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "college"
+  "defaultProject": "college",
+  "cli": {
+    "analytics": "8aae2b7a-77e7-4a08-a4f8-7839ec455049"
+  }
 }
